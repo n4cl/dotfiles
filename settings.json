@@ -1,0 +1,24 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "all",
+
+    // Vim extention
+    "vim.hlsearch": true,
+    "vim.incsearch": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.disableAnnoyingNeovimMessage": true
+}
