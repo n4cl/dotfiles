@@ -6,6 +6,7 @@
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": true,
     "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
 
     // Vim extention
     "vim.hlsearch": true,
