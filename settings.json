@@ -1,12 +1,17 @@
 // Place your settings in this file to overwrite the default settings
 {
+    // Editor
     "workbench.colorTheme": "Visual Studio Dark",
     "editor.fontSize": 14,
     "editor.tabSize": 4,
-    "editor.trimAutoWhitespace": true,
-    "editor.insertSpaces": true,
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
+
+    // Remove whitespace from end of line when save
+    "editor.trimAutoWhitespace": true,
+
+    // Insert spaces when tab key press
+    "editor.insertSpaces": true,
 
     // Vim extention
     "vim.hlsearch": true,
