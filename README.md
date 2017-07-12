@@ -2,7 +2,8 @@ Settings for VSCode
 ===
 
 ## Requirement
-- Node.js v8
+- Node.js v6.11.0
+- eslint v4.1.1
 
 ## Usage
 ```
