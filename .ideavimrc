@@ -1,0 +1,9 @@
+" Search
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Key
+inoremap jj <Esc>
+nnoremap Y y$
