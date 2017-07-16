@@ -1,3 +1,7 @@
+" Edit
+set tabstop=4
+set expandtab
+
 " Search
 set ignorecase
 set smartcase
