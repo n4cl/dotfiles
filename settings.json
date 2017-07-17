@@ -22,6 +22,12 @@
             "after": ["<Esc>"]
         }
     ],
+     "vim.otherModesKeyBindings": [
+        {
+            "before": ["Y"],
+            "after": ["y", "$"]
+        }
+    ],
     "vim.handleKeys": {
         "<C-a>": false,
         "<C-f>": false
