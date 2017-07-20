@@ -1,5 +1,6 @@
 Settings for VSCode
 ===
+It is environment setting for developing HTML. CSS, JavaScript with VisualStudioCode. 
 
 ## Requirement
 - Node.js v6.11.0
