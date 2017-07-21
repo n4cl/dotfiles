@@ -7,6 +7,9 @@
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
 
+    // Display line of indent
+    "editor.renderIndentGuides": true,
+
     // Remove whitespace from end of line when save
     "editor.trimAutoWhitespace": true,
 
