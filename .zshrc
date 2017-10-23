@@ -30,6 +30,7 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 
 # alias
+alias ls='ls -G'
 alias la='ls -al'
 alias ll='ls -l'
 
