@@ -1,11 +1,16 @@
 " Edit
 set tabstop=4
+" TABの代わりにスペースを挿入
 set expandtab
 
 " Search
+" 大文字小文字を区別
 set ignorecase
+" 大文字入力時に大文字、小文字を区別
 set smartcase
+" リアルタイム検索
 set incsearch
+" マッチした文字列をハイライト
 set hlsearch
 
 " Key
