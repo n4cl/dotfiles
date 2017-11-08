@@ -16,3 +16,5 @@ set hlsearch
 " Key
 inoremap jj <Esc>
 nnoremap Y y$
+" ハイライトオフ
+nnoremap <Esc><Esc> :nohlsearch<CR>
