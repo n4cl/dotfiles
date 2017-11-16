@@ -6,6 +6,9 @@
     "[html]": {
         "editor.tabSize": 2
     },
+    "[scala]": {
+        "editor.tabSize": 2
+    },
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "editor.minimap.enabled": false,
