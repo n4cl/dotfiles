@@ -1,1 +1,1 @@
-# shell-settings
+# terminal-settings
