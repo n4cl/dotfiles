@@ -1,0 +1,8 @@
+[user]
+	name = n4cl
+	email = devn4cl@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = auto
+
