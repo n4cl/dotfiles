@@ -1,8 +1,13 @@
 [user]
-	name = n4cl
-	email = devn4cl@gmail.com
+    name = n4cl
+    email = devn4cl@gmail.com
 [core]
-	editor = vim
+    editor = vim
 [color]
-	ui = auto
-
+    ui = auto
+[alias]
+    graph = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
+    diffc = diff --cached
+    difff = diff --name-only
+    diffw = diff --word-diff
+    unstage = reset HEAD
