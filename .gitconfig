@@ -11,3 +11,4 @@
     difff = diff --name-only
     diffw = diff --word-diff
     unstage = reset HEAD
+    st = status
