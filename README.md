@@ -1,5 +1,5 @@
 # dotfiles
-=======
+===
 
 ## PyCharm
 
