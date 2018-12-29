@@ -30,3 +30,8 @@ It is environment setting for developing HTML. CSS, JavaScript with VisualStudio
 - [CSSLint](https://marketplace.visualstudio.com/items?itemName=raymondcamden.CSSLint)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [zenkaku](https://marketplace.visualstudio.com/items?itemName=mosapride.zenkaku)
+
+## tmux
+
+### Requirement
+- tmux 2.8
