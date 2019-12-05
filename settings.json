@@ -2,16 +2,14 @@
 {
     // Editor
     "workbench.colorTheme": "Visual Studio Dark",
-    "editor.fontSize": 14,
-    "[html]": {
-        "editor.tabSize": 2
-    },
-    "[scala]": {
-        "editor.tabSize": 2
-    },
+    "editor.fontSize": 16,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+
+    // Fix the suggestion position to the top
+    "editor.suggestSelection": "first",
 
     // Display line of indent
     "editor.renderIndentGuides": true,
@@ -22,7 +20,25 @@
     // Insert spaces when tab key press
     "editor.insertSpaces": true,
 
-    // Vim extention
+    "window.zoomLevel": -1,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[scala]": {
+        "editor.tabSize": 2
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+
+    "python.jediEnabled": false,
+
     "vim.hlsearch": true,
     "vim.incsearch": false,
     "vim.insertModeKeyBindings": [
@@ -31,15 +47,16 @@
             "after": ["<Esc>"]
         }
     ],
-     "vim.otherModesKeyBindings": [
+    "vim.normalModeKeyBindings": [
         {
             "before": ["Y"],
             "after": ["y", "$"]
         }
     ],
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
-    },
-    "vim.disableAnnoyingNeovimMessage": true
+    "files.exclude": {
+        "/.git": true,
+        "/.DS_Store": true,
+        "/node_modules": true,
+        "/node_modules/": true
+    }
 }
