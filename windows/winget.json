@@ -1,11 +1,14 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2026-01-26T20:31:38.736-00:00",
-	"Sources" : 
+	"CreationDate" : "2026-01-28T04:33:05.581-00:00",
+	"Sources" :
 	[
 		{
-			"Packages" : 
+			"Packages" :
 			[
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop"
+				},
 				{
 					"PackageIdentifier" : "Mozilla.Firefox"
 				},
@@ -28,13 +31,13 @@
 					"PackageIdentifier" : "Google.ChromeRemoteDesktopHost"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.6"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.9"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
@@ -58,7 +61,7 @@
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://cdn.winget.microsoft.com/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
