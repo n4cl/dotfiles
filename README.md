@@ -6,7 +6,6 @@ mac / Windows / WSL で使う設定ファイルを管理するリポジトリで
 ## 方針
 
 - ルートにある dotfiles は環境依存しない共通設定として管理する。
-- 例外として `mac-setup.sh` は mac 専用セットアップ用スクリプト。
 
 ## 構成
 
@@ -15,7 +14,6 @@ mac / Windows / WSL で使う設定ファイルを管理するリポジトリで
 - `.gitconfig`: Git の基本設定と alias
 - `.tmux.conf`: tmux のキーバインドや表示設定
 - `.zshrc`: zsh の履歴、プロンプト、alias 設定
-- `mac-setup.sh`: mac で tmux とクリップボード連携するための追加セットアップ
 
 ### windows/
 
@@ -33,12 +31,6 @@ mac / Windows / WSL で使う設定ファイルを管理するリポジトリで
 ln -sf "$PWD/.gitconfig" ~/.gitconfig
 ln -sf "$PWD/.tmux.conf" ~/.tmux.conf
 ln -sf "$PWD/.zshrc" ~/.zshrc
-```
-
-### mac のみ
-
-```bash
-./mac-setup.sh
 ```
 
 ### Windows のみ
