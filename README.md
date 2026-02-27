@@ -1,37 +1,50 @@
 dotfiles
 ===
 
-## PyCharm
+mac / Windows / WSL で使う設定ファイルを管理するリポジトリです。
 
-### Usage
-- Move .ideavimrc to home.
-- [Preferences] -> [Other Settings] -> [Vim Emulation]
-  - To use the visual block mode, change the shortcut ^ v from IDE to Vim.
+## 方針
 
-### Requirement
-- IdeaVim
+- ルートにある dotfiles は環境依存しない共通設定として管理する。
+- 例外として `mac-setup.sh` は mac 専用セットアップ用スクリプト。
 
-## VSCode
-It is environment setting for developing HTML. CSS, JavaScript with VisualStudioCode. 
+## 構成
 
-### Requirement
-- Node.js v6.11.0
-- eslint v4.1.1
+### ルート（共通）
 
-### Usage
+- `.gitconfig`: Git の基本設定と alias
+- `.tmux.conf`: tmux のキーバインドや表示設定
+- `.zshrc`: zsh の履歴、プロンプト、alias 設定
+- `mac-setup.sh`: mac で tmux とクリップボード連携するための追加セットアップ
+
+### windows/
+
+- `windows/winget.json`: Windows 環境のパッケージ一覧（`winget export` の結果）
+- `windows/PowerToys/Keyboard Manager/default.json`: PowerToys Keyboard Manager のキーリマップ設定
+
+## 使い方
+
+### 共通（mac / WSL）
+
+この手順は `dotfiles` リポジトリのルートディレクトリで実行してください。  
+別ディレクトリで実行すると、意図しない場所をリンクしてしまう可能性があります。
+
+```bash
+ln -sf "$PWD/.gitconfig" ~/.gitconfig
+ln -sf "$PWD/.tmux.conf" ~/.tmux.conf
+ln -sf "$PWD/.zshrc" ~/.zshrc
 ```
-# Install Extension for VSCode
-./installExtension.sh
+
+### mac のみ
+
+```bash
+./mac-setup.sh
 ```
 
-### Extension
-- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint)
-- [CSSLint](https://marketplace.visualstudio.com/items?itemName=raymondcamden.CSSLint)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [zenkaku](https://marketplace.visualstudio.com/items?itemName=mosapride.zenkaku)
+### Windows のみ
 
-## tmux
+```powershell
+winget import -i .\windows\winget.json
+```
 
-### Requirement
-- tmux 2.8
+PowerToys の Keyboard Manager は `windows/PowerToys/Keyboard Manager/default.json` を元に手動で設定を合わせる想定です。
